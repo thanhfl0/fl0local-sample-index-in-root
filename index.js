@@ -1,6 +1,6 @@
 const http = require("http");
 
-const server = http.createServer(async (req, res) => {
+const server = http.createServer((req, res) => {
   //set the request route
   if (req.url === "/healthcheck") {
     //response headers
